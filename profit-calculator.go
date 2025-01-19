@@ -22,7 +22,7 @@ func main() {
 	ebt = revenue - expenses
 
 	// EAT = EBT - (EBT * Tax Rate)
-	profit = ebt - (ebt * taxRate)
+	profit = ebt * (1 - taxRate/100)
 
 	// Ratio = (EBT / profit)
 	ratio = ebt / profit
